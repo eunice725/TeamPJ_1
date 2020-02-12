@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvReceive;
     ImageView ivBT;
     TextView tvSignup, tvLogin, tvLogout;
+    TextView tvSettingMenu;
 
     SQLiteDatabase sqlDB;
     BluetoothDB btDB;
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tvSettingMenu = (TextView)findViewById(R.id.tvSettingMenu);
         tvSignup = (TextView) findViewById(R.id.tvSignup);
         tvLogin = (TextView) findViewById(R.id.tvLogin);
         tvLogout = (TextView) findViewById(R.id.tvLogout);
@@ -131,6 +133,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         checkBluetooth();
+
+        tvSettingMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mIntent = new Intent(getApplicationContext(), SettingActivity.class);
+                startActivity(mIntent);
+
+
+            }
+        });
 
     } //onCreate End
 
