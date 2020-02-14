@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent mIntent = new Intent(getApplicationContext(), Intro.class);
+        startActivity(mIntent);
 
         tvSettingMenu = (TextView)findViewById(R.id.tvSettingMenu);
         tvSignup = (TextView) findViewById(R.id.tvSignup);
