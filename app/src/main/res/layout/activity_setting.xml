@@ -7,9 +7,61 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/listViewSetting"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="카테고리"
+            android:gravity="bottom"
+            android:textColor="#7C7C7C"
+            android:background="#EBEBEB"/>
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="도움말"
+            android:gravity="start|center"
+            style="?android:borderlessButtonStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="카테고리"
+            android:gravity="bottom"
+            android:textColor="#7C7C7C"
+            android:background="#EBEBEB"/>
+        <Button
+            android:id="@+id/btnInformation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="내 정보"
+            android:gravity="start|center"
+            style="?android:borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/btnLockPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="암호 설정"
+            android:gravity="start|center"
+            style="?android:borderlessButtonStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="카테고리"
+            android:gravity="bottom"
+            android:textColor="#7C7C7C"
+            android:background="#EBEBEB"/>
+        <Button
+            android:id="@+id/btnVersion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="버전정보"
+            android:gravity="start|center"
+            style="?android:borderlessButtonStyle"/>
+
+
+    </LinearLayout>
 
 </LinearLayout>
