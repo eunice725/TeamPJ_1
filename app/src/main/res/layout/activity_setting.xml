@@ -60,7 +60,20 @@
             android:text="버전정보"
             android:gravity="start|center"
             style="?android:borderlessButtonStyle"/>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="카테고리"
+            android:gravity="bottom"
+            android:textColor="#7C7C7C"
+            android:background="#EBEBEB"/>
+        <Button
+            android:id="@+id/btnwithdrawal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="회원탈퇴"
+            android:gravity="start|center"
+            style="?android:borderlessButtonStyle"/>
 
     </LinearLayout>
 
